@@ -8,8 +8,11 @@ def text_to_analyze(txt):
     input_json = { "raw_document": { "text": txt } }
 
     resp = requests.post(url, headers = headers, json=input_json)
-    print("resp : ", resp.text)
-
+    print("resp : ", resp.status_code)
+    if resp.status_code == 400:
+        print("returning None!!!!!!!!!!!!!!")
+        return {'anger':None, 'joy':None, 'fear':None, 
+        'disgust':None, 'sadness':None, 'dominant_emotion':None}
     out = json.loads(resp.text)
     final_dict = {}
 
