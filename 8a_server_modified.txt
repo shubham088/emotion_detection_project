@@ -2,7 +2,7 @@
 server code to run emotion detection app
 '''
 from flask import Flask, render_template, request
-from EmotionDetection.emotion_detection import text_to_analyze
+from EmotionDetection.emotion_detection import emotion_detector
 
 app = Flask("Emotion Detection")
 
@@ -11,7 +11,7 @@ def get_text_for_emotion_analysis():
     ''' function to get emotional analysis '''
     txt = request.args.get('textToAnalyze')
 
-    result = text_to_analyze(txt)
+    result = emotion_detector(txt)
     if result['dominant_emotion'] is None:
         print("got None ")
         return "Invalid text! Please try again!.", 200

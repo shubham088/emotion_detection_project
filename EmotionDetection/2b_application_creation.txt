@@ -1,10 +1,7 @@
->>> from EmotionDetection.emotion_detection import text_to_analyze
->>> text_to_analyze('i am happy')
+theia@theiadocker-shubhamsha46:/home/project/final_project$ python3.11
+Python 3.11.14 (main, Oct 10 2025, 08:54:03) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from emotion_detection import emotion_detector
+>>> emotion_detector('i am good')
 resp :  200
-'{"emotionPredictions":[{"emotion":{"anger":0.0043079085, "disgust":0.00041127237, "fear":0.0037504788, "joy":0.9918804, "sadness":0.014091322}, 
-"target":"", "emotionMentions":[{"span":{"begin":0, "end":10, 
-"text":"i am happy"}, "emotion":{"anger":0.0043079085, 
-"disgust":0.00041127237, "fear":0.0037504788, "joy":0.9918804, 
-"sadness":0.014091322}}]}], 
-"producerId":{"name":"Ensemble Aggregated Emotion Workflow", 
-"version":"0.0.1"}}'
+'{"emotionPredictions":[{"emotion":{"anger":0.017168876, "disgust":0.006172905, "fear":0.033312388, "joy":0.9319958, "sadness":0.054447174}, "target":"", "emotionMentions":[{"span":{"begin":0, "end":9, "text":"i am good"}, "emotion":{"anger":0.017168876, "disgust":0.006172905, "fear":0.033312388, "joy":0.9319958, "sadness":0.054447174}}]}], "producerId":{"name":"Ensemble Aggregated Emotion Workflow", "version":"0.0.1"}}'

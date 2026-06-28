@@ -1,4 +1,4 @@
-theia@theiadocker-shubhamsha46:/home/project/final_project/final_project$ python3.11 test_emotion_detection.py 
+theia@theiadocker-shubhamsha46:/home/project/final_project$ python3.11 test_emotion_detection.py 
 resp :  200
 .resp :  200
 .resp :  200
@@ -6,6 +6,6 @@ resp :  200
 .resp :  200
 .
 ----------------------------------------------------------------------
-Ran 5 tests in 0.703s
+Ran 5 tests in 0.652s
 
 OK

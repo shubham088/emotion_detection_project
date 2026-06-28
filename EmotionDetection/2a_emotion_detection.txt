@@ -9,11 +9,4 @@ def emotion_detector(txt):
 
     resp = requests.post(url, headers = headers, json=input_json)
     print("resp : ", resp.status_code)
-
-    out = json.loads(resp.text)
-    final_dict = {}
-    final_dict = out['emotionPredictions'][0]['emotion']
-    dominant_key = max(final_dict, key=final_dict.get)
-    # Add it back to the dictionary
-    final_dict["dominant_emotion"] = dominant_key
     return resp.text
